@@ -1,59 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/base.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="u-container-layout-1">
-    <header>
-      <img class="img-responsive" src="images/illustration-hero.svg" alt="">
-    </header>
-    <main>
-  
-      <h1 class="title">
-        Order Summary
-      </h1>
-    <p class="text-align">
-      You can now listen to millions of songs, audiobooks, and podcasts on any 
-      device anywhere you like!
-    </p>
-   <div class="u-container-layout-3">
-     <p class="text-high">Annual Plan</p>
-    <div class="u-container-layout-3-mobile">
-      <img src="images/icon-music.svg" alt="">
-      <a class="aido" href="#">Change</a>
-    </div>
-    <p class="text-down">$59.99/year</p>
-     </div>
-    <a href="#"><button class="botton-payment">Proceed to Payment</button></a>  
-    <a href="#"><button class="botton-cancel-order">Cancel Order</button></a>  
+    <title>Frontend Mentor | Order summary card</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
         
-   
-  </div>
-</div>
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
 
-
-</main>
-
-</div>
-
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Breno Lima</a>.
-       
-  </div>
+<body>
+    <main class="container">
+        <article class="cartao">
+            <img src="assets/images/illustration-hero.svg" alt="" class="cartao__imagem">
+            <h2 class="cartao__titulo">Order Summary</h2>
+            <p class="cartao__paragrafo"> You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <div class="cartao__plano">
+                <img class="cartao__icon-music--alinhamento" src="assets/images/icon-music.svg" alt="" srcset="">
+                <p class="cartao__plano-titulo cartao__plano-titulo--grid"> Annual Plan<span class="cartao__plano-preco">$59.99/year</span></p>
+                <a class="cartao__change" href="#">Change</a>
+            </div>
+            <button class="cartao__btn">Proceed to Payment<a href="#" class="cartao__link"></a></button>
+            <button class="cartao__btn cartao__btn--modificado ">  Cancel Order <a href="#" class="cartao__link"></a></button>
+        </article>
+    </main>
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Breno Lima</a>.
+        </div>
+    </footer>
 </body>
+
 </html>

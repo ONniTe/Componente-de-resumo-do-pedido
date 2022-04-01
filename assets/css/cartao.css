@@ -1,0 +1,89 @@
+.cartao {
+    height: 65vh;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px var( --Azul-escuro-box-shadow);
+}
+
+.cartao__imagem {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px
+}
+
+.cartao__titulo,
+.cartao__paragrafo {
+    text-align: center;
+    margin: 20px 0px 42px 0px
+}
+
+.cartao__titulo {
+    font-size: 1.5rem;
+    font-weight: var( --Weights-700);
+}
+
+.cartao__paragrafo {
+    font-size: var(--Font-size);
+    color: var( --Azul-dessaturado);
+    margin: 42px 1rem
+}
+
+.cartao__plano {
+    display: flex;
+    background-color: var( --Muito-azul-pálido);
+    margin: 24px;
+    padding: .5rem;
+    height: 42px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.cartao__plano-titulo {
+    font-weight: var( --Weights-700);
+}
+
+.cartao__plano-titulo--grid {
+    display: grid;
+    row-gap: .5rem;
+}
+
+.cartao__plano-preco {
+    align-self: flex-end;
+    font-weight: var( --Weights-500);
+    color: var( --Azul-dessaturado)
+}
+
+.cartao__icon-music--alinhamento {
+    margin-left: -.75rem
+}
+
+.cartao__change {
+    color: var( --Bright-blue);
+    font-weight: var( --Weights-700)
+}
+
+.cartao__change:hover {
+    color: var( --Bright-blue--ativo);
+}
+
+@media screen and (min-width: 768px) {
+    .cartao {
+        height: 80vh;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cartao {
+        height: 700px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao {
+        height: 70vh;
+    }
+}

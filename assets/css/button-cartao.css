@@ -1,0 +1,33 @@
+    .cartao__btn {
+        box-sizing: border-box;
+        width: -webkit-fill-available;
+        margin: 10px 24px 10px 24px;
+        height: 45px;
+        color: #fff;
+        border-style: none;
+        border-radius: 10px;
+        background-color: var(--Bright-blue);
+        font-weight: var( --Weights-700)
+    }
+    
+    .cartao__btn--modificado {
+        background-color: transparent;
+        color: var( --Azul-escuro)
+    }
+    
+    .cartao__btn:hover {
+        background-color: var( --Bright-blue--ativo);
+    }
+    
+    .cartao__btn--modificado:hover {
+        background-color: initial;
+        color: var( --Azul-dessaturado);
+    }
+    
+    @media screen and (min-width: 768px) {
+        .cartao__btn {
+            height: 60px;
+        }
+    }
+    
+    @media screen and (min-width: 1440px) {}

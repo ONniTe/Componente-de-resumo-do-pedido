@@ -1,0 +1,46 @@
+@import url(reset.css);
+@import url(cartao.css);
+@import url(button-cartao.css);
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+:root {
+    --font-family: "Red Hat Display", sans-serif;
+    /* primary */
+    --Azul-pálido: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --Muito-azul-pálido: hsl(225, 100%, 98%);
+    --Azul-dessaturado: hsl(224, 23%, 55%);
+    --Azul-escuro: hsl(223, 47%, 23%);
+    --Azul-escuro-box-shadow: hsl(223, 47%, 75%);
+    /* cores ativas */
+    --Bright-blue--ativo: #766CF1;
+    /* Font */
+    --Font-size: 1rem;
+    /* peso-font */
+    --Weights-500: 500;
+    --Weights-700: 700;
+    --Weights-900: 900;
+}
+
+Body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--Azul-pálido);
+    height: 100vh;
+    font-family: var( --font-family);
+}
+
+.container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    Body {
+        background-image: url('../images/pattern-background-desktop.svg');
+    }
+}
